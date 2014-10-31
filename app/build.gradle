@@ -3,8 +3,8 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.12.2'
-        classpath 'me.champeau.gradle:gradle-groovy-android-plugin:0.3.0'
+        classpath 'com.android.tools.build:gradle:0.13.2'
+        classpath 'me.champeau.gradle:gradle-groovy-android-plugin:0.3.3'
     }
 }
 
@@ -34,5 +34,12 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'org.codehaus.groovy:groovy:2.4.0-beta-3'
+    compile 'org.codehaus.groovy:groovy:2.4.0-beta-3:grooid'
+}
+
+project.androidGroovy {
+    options {
+        sourceCompatibility = '1.7'
+        targetCompatibility = '1.7'
+    }
 }

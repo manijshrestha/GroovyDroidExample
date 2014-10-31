@@ -8,10 +8,17 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".DroidActivity">
 
-    <TextView
-        android:id="@+id/message"
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/name_tv"
+        android:hint="@string/name"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/sayHello"/>
 
 </RelativeLayout>
